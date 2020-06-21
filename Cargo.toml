@@ -1,0 +1,14 @@
+[package]
+name = "Raf"
+version = "0.0.1"
+
+[profile.release]
+opt-level = 'z'  # Optimize for size.
+lto = true
+panic = 'abort'
+build = "src/main.rs"
+
+
+[[bin]]
+name = "hello_world"
+path = "/src/main.rs"
